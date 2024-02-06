@@ -1,0 +1,122 @@
+.parent {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+
+  width: 50vw;
+  height: 50vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  font-family: digital;
+  padding: 2px;
+  border: 3px solid black;
+  }
+  
+  .calculation {
+    grid-area: 1 / 1 / 2 / 5;
+    background-color: black;
+    text-align: right;
+    font-size: 2.5em;
+    color: orange;
+    padding-right: 10px;
+    vertical-align: text-top;
+  }
+
+  .result { 
+    grid-area: 2 / 1 / 3 / 5; 
+    text-align: right;
+    background-color: black;
+    height: 10vh;
+    font-size: 3em;
+    padding-right: 10px;
+    vertical-align: text-top;
+  }
+  .AC { 
+    grid-area: 3 / 1 / 4 / 3; 
+    text-align: center;
+    background-color: rgb(228, 27, 27);
+
+    border: 1px solid black;
+  }
+  .divide { 
+    grid-area: 3 / 3 / 4 / 4; 
+    background-color: rgb(50, 43, 32);
+  }
+  .multiply { 
+    grid-area: 3 / 4 / 4 / 5; 
+    background-color: rgb(50, 43, 32);
+  }
+  .equals { 
+    grid-area: 6 / 4 / 8 / 5; 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    background-color: darkblue;
+  }
+  .number {
+    text-align: center;
+    border: 1px solid black;
+    background-color: gray;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    
+  }
+  .seven { 
+    grid-area: 4 / 1 / 5 / 2; 
+  }
+  .eight { 
+    grid-area: 4 / 2 / 5 / 3; 
+  }
+  .nine { 
+    grid-area: 4 / 3 / 5 / 4; 
+  }
+  .minus { 
+    grid-area: 4 / 4 / 5 / 5; 
+    background-color: rgb(50, 43, 32);
+  }
+  .four { 
+    grid-area: 5 / 1 / 6 / 2; 
+  }
+  .five { 
+    grid-area: 5 / 2 / 6 / 3; 
+  }
+  .six { 
+    grid-area: 5 / 3 / 6 / 4; 
+  }
+  .plus { 
+    grid-area: 5 / 4 / 6 / 5; 
+    background-color: rgb(50, 43, 32);
+  }
+  .one { 
+    grid-area: 6 / 1 / 7 / 2; 
+  }
+  .two { 
+    grid-area: 6 / 2 / 7 / 3; 
+  }
+  .three { 
+    grid-area: 6 / 3 / 7 / 4; 
+  }
+  .period { 
+    grid-area: 7 / 3 / 8 / 4; 
+  }
+  .zero { 
+    grid-area: 7 / 1 / 8 / 3; 
+    min-height: 40px;
+  }
